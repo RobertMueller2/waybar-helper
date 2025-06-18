@@ -10,4 +10,4 @@ args-helper = { path = "../args-helper" }
 async-std = { version = "1.13.1", features = ["attributes"] }
 ctrlc-async = "3.2.2"
 futures-util = "0.3.31"
-swayipc-async = "2.0.4"
+swayipc-async = "2.1.0"

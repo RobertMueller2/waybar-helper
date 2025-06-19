@@ -18,8 +18,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "512761e0bb2578dd7380c6baaa0f4ce03e84f95e960231d1dec8bf4d7d6e2627"
 
 [[package]]
-name = "args-helper"
-version = "0.1.0"
+name = "anyhow"
+version = "1.0.98"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e16d2d3311acee920a9eb8d33b8cbc1787ce4a264e85f964c2404b969bdcd487"
 
 [[package]]
 name = "async-attributes"
@@ -816,7 +818,7 @@ dependencies = [
 name = "waybar-helper"
 version = "0.1.0"
 dependencies = [
- "args-helper",
+ "anyhow",
  "async-std",
  "ctrlc-async",
  "futures-util",

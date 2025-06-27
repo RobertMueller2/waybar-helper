@@ -21,12 +21,12 @@ async fn main() {
         "wayeyes" => match Wayeyes::new_from_args(&args[2..]) {
             Ok(wayeyes) => {
                 if let Err(e) = wayeyes.run().await {
-                    eprintln!("{:?}", e);
+                    eprintln!("{e:?}");
                     std::process::exit(2);
                 }
             }
             Err(e) => {
-                eprintln!("{:?}", e);
+                eprintln!("{e:?}");
                 print_usage(&exe);
                 std::process::exit(2);
             }
@@ -226,7 +226,7 @@ impl Wayeyes {
 }
 
 fn print_usage(exe: &str) {
-    println!("{:?} wayeyes", exe);
+    println!("{exe:?} wayeyes");
     println!("\t\t\t[--format <format string>]");
     println!("\t\t\t[--xdg-icon <icon for xdg window>]");
     println!("\t\t\t[--xdg-tooltip <tooltip for xdg window>]");

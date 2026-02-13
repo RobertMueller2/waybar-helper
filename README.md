@@ -16,5 +16,5 @@ cargo build
 cargo run -p waybar-helper -- wayeyes
 
 # install the binary in $HOME/.cargo/bin
-cargo install -p waybar-helper-- wayeyes
+cargo install -p waybar-helper
 ```

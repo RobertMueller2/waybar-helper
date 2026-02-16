@@ -9,5 +9,5 @@ edition = "2024"
 anyhow = "1.0.101"
 async-std = { version = "1.13.2", features = ["attributes"] }
 ctrlc-async = "3.2.2"
-futures-util = "0.3.31"
+futures-util = "0.3.32"
 swayipc-async = "3.0.0"
